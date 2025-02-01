@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A026E043-AB8E-4BC5-BA27-AAE35F2F2EF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projet</RootNamespace>
+    <AssemblyName>Projet</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>documentation_folder_document_management_files_file_project_icon_142253.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DateTime.cs" />
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Forms\Affectation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Affectation.Designer.cs">
+      <DependentUpon>Affectation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DetachementSyndical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DetachementSyndical.Designer.cs">
+      <DependentUpon>DetachementSyndical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Déposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Déposition.Designer.cs">
+      <DependentUpon>Déposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Exemption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Exemption.Designer.cs">
+      <DependentUpon>Exemption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Licenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Licenses.Designer.cs">
+      <DependentUpon>Licenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MiseDisposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MiseDisposition.Designer.cs">
+      <DependentUpon>MiseDisposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <None Include="Resources\icons8-quitter-50.png" />
+    <None Include="Resources\icons8-quitter-48.png" />
+    <None Include="Resources\icons8-quitter-64 %281%29.png" />
+    <None Include="Resources\icons8-outils-administratifs-641.png" />
+    <None Include="Resources\icons8-outils-administratifs-64.png" />
+    <None Include="Resources\icons8-x-24.png" />
+    <None Include="Resources\icons8-diplôme-1-50 %281%29.png" />
+    <None Include="Resources\icons8-ajouter-une-propriété-48.png" />
+    <None Include="Resources\icons8-grand-canyon-64.png" />
+    <None Include="Resources\icons8-paramètres-50.png" />
+    <None Include="Resources\icons8-page-présentation-3-50.png" />
+    <None Include="Resources\icons8-diplôme-1-50.png" />
+    <EmbeddedResource Include="Forms\Affectation.resx">
+      <DependentUpon>Affectation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DetachementSyndical.resx">
+      <DependentUpon>DetachementSyndical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Déposition.resx">
+      <DependentUpon>Déposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Exemption.resx">
+      <DependentUpon>Exemption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Licenses.resx">
+      <DependentUpon>Licenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MiseDisposition.resx">
+      <DependentUpon>MiseDisposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="documentation_folder_document_management_files_file_project_icon_142253.ico" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\certificate %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-multiplier-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-effacer-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-mark_9916875.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letter-x_7437050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
