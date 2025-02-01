@@ -1,1 +1,56 @@
+# Fichiers binaires et compilés
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.log
+
+# Dossiers de Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.csproj.user
+
+# Fichiers temporaires et de build
+*.tmp
+*.bak
+*.ncb
+*.opendb
+*.VC.db
+
+# Packages NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# Fichiers de configuration de publication
+publish/
+app.publish/
+
+# Bases de données locales
+*.mdf
+*.ldf
+*.db
+
+# Fichiers spécifiques à ReSharper et Rider
+.idea/
+*.DotSettings.user
+*.sln.iml
+
+# JetBrains Rider et VS Code
+/.idea/
+/.vscode/
+
+# Logs et autres fichiers système
+*.log
+*.DS_Store
+Thumbs.db
+
+# Fichiers générés par l'outil de build
+*.tlog
+*.lastbuildstate
+
+
 Setup/
